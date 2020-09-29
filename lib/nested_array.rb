@@ -17,11 +17,19 @@ CONVENTIONAL_PRODUCE = [
 ]
 
 def assembled_matrix
+<<<<<<< HEAD
 
   produce_rack = [
     CONVENTIONAL_PRODUCE,
     ORGANIC_PRODUCE,
 ]
+=======
+  produce_rack = [
+    CONVENTIONAL_PRODUCE,
+    ORGANIC_PRODUCE,
+
+  ]
+>>>>>>> 1c5a8a71e5a0eda7c8dac1a7db43b8abe7e7f23d
   # Build an array that contains both of the above arrays
   # This matrix will represent a produce storage room
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
@@ -30,10 +38,17 @@ end
 
 def sorted_matrix
   produce_rack = [
+<<<<<<< HEAD
     CONVENTIONAL_PRODUCE.sort,
     ORGANIC_PRODUCE.sort,
 ]
 produce_rack
+=======
+    CONVENTIONAL_PRODUCE,
+    ORGANIC_PRODUCE,
+
+    produce_rack.sort
+>>>>>>> 1c5a8a71e5a0eda7c8dac1a7db43b8abe7e7f23d
 
   # Using Array literal syntax only, build another nested array that
   # uses the arrays of conventional and organic produce as before.
@@ -41,16 +56,22 @@ produce_rack
 end
 
 def matrix_lookup(matrix, row, column)
+<<<<<<< HEAD
   matrix[row][column]
+=======
+>>>>>>> 1c5a8a71e5a0eda7c8dac1a7db43b8abe7e7f23d
   # Given any matrix (array of arrays), a row index and a column index,
   # Return the matrix's content at that row and and column
 end
 
 def matrix_update(matrix, row, column, new_value)
+<<<<<<< HEAD
 
   matrix[row][column] = new_value
   matrix
 
+=======
+>>>>>>> 1c5a8a71e5a0eda7c8dac1a7db43b8abe7e7f23d
   # Given any matrix (array of arrays), a row index and a column index,
   # Update the matrix location at that row and column to have the value of new_value
   # Return the updated matrix
